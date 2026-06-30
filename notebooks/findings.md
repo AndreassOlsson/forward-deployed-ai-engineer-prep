@@ -1,0 +1,81 @@
+# Findings
+
+## AI Engineer vs ML Engineer and Mismatch Between Job Postings and Reality
+
+### What is what (from discussions):
+
+- ML Engineer: Focus on training/tuning models
+- AI Engineer: Integrate pretrained models into production
+
+### What people report:
+
+- Applying for AI Engineer -> Grilled on classical ML (training models)
+- Expecting agentic workflows -> Asked to train models from scratch
+- Wanting LLM integration work -> Evaluated on infrastructure
+
+### What AI Engineers actually do:
+
+#### Orchestrators (~50%): RAG pipelines, vector DBs, agentic workflows
+
+- Building "ATOM": Local assistant with long-term memory consolidation
+- Slack conversation QA: Ingesting threads, handling context decay
+- Wireframe-to-UI agents: Transforming designs into code
+- Multi-tenant backends: Per-user vector namespaces, token budgeting
+- Agentic debate systems: Agents that tune each other's parameters
+
+#### Evals Specialists (~40%): Building evaluation frameworks
+
+- LLM-as-judge systems: Using models to score other model outputs
+- Golden datasets: Curated test sets for measuring RAG performance
+- Hallucination detection: Tracking when answers drift from retrieved context
+- Production metrics: Recall@K, latency per query, cost per 1k requests
+
+#### Efficiency Wrappers (~10%): Streaming, prompt caching, speculative decoding
+
+- Semantic caching: Storing responses to similar queries
+- Token optimization: Domain-specific tokenizers to reduce sequence length
+- Rate limit handling: Fallback across multiple providers
+- Model routing: Cheap models for simple tasks, expensive ones when needed
+
+### Other testimonials
+
+#### Day-to-Day vs. Assumptions
+
+- "Write prompts all day" → Writing code that dynamically generates prompts based on context
+- "Call OpenAI API" → Building systems with fallbacks, monitoring, cost tracking, multiple providers
+- "Train models" → Rarely. Use pre-trained models via APIs or open-source weights
+- "Work in notebooks" → Moving to production APIs (FastAPI/Go) with Docker, CI/CD
+
+#### Real challenges people report:
+
+- Debugging why an LLM ignored an instruction in a 50-step agentic chain
+- Figuring out which retrieval chunk caused a hallucination
+- Optimizing token usage without degrading output quality
+- Handling rate limits across multiple API providers
+
+#### Jobs vs. Reality Gap
+
+| Dimension    | Job Postings Say              | People Actually Experience                               |
+| ------------ | ----------------------------- | -------------------------------------------------------- |
+| RAG          | Core skill (35.9% mention it) | Assumed baseline—evaluations matter more                 |
+| Fine-tuning  | Often mentioned               | Rarely tested directly unless role-specific              |
+| ML knowledge | 64% require some ML           | Often lighter weight than production skills              |
+| Full-stack   | 93% require beyond-GenAI      | Confirmed—end-to-end delivery expected                   |
+| AI tools     | Not usually mentioned         | Increasingly tested (or ironically banned in interviews) |
+
+#### Common complaint: Jobs demand 3 roles in 1.
+
+Reality: "AI Engineer" often means:
+
+- ML Engineer (training models)
+- MLOps Engineer (deployment infrastructure)
+- Data Engineer (pipelines)
+- Or actual AI Engineering (LLM orchestration)
+
+#### Key findings
+
+1. Titles are broken: "AI Engineer" means different things at different companies
+2. Production thinking wins: Cost, latency, observability—not just accuracy
+3. Evaluation is the real skill: Anyone can build; few can measure if it works
+4. System owners get hired: People who can build → deploy → scale → measure
+5. Gap remains: Job postings don't fully reflect what's actually tested
