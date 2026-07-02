@@ -1,0 +1,2 @@
+- [x] divide into chapters
+- [] create an abstract for each chapter
