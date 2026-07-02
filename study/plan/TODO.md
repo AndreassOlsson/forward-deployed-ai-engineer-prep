@@ -1,3 +1,3 @@
 - [x] divide into chapters
 - [x] create an abstract for each chapter
-- [] attach resources in a clear structure
+- [x] attach resources in a clear structure
