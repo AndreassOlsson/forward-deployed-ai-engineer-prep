@@ -1,3 +1,6 @@
 - [x] divide into chapters
 - [x] create an abstract for each chapter
 - [x] attach resources in a clear structure
+- [x] create reusable prompt context
+- [x] refresh data-structures
+- [x] refresh data-types

@@ -7,3 +7,5 @@
 - Full fine-tuning vs Adapter/PEFT fine tuning:
   - Full: Start with pretrained, update original weights directly. Its effectively a new model
   - Afapter/PEFT: Keep base model mostly frozen, train a small set of extra parameters, like LoRA adapters. After training, we have original base model PLUS learned adapter weights, so the base model is still there, and the learned delta is layered on top.
+
+- Contigous = ish adjacent. Arrays have their elements stored contigously in memory: one after another. Touching.
