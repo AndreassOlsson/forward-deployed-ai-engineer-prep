@@ -4,3 +4,5 @@
 - [x] create reusable prompt context
 - [x] refresh data-structures
 - [x] refresh data-types
+- [x] new gem
+- [] flow for reviewing and taking lessons from hackerrank excersizes
