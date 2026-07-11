@@ -1,3 +1,13 @@
 # Abstract
 
 This module defines the consulting-specific core of the Forward Deployed role, establishing the translation mechanism between engineering metrics and corporate financial returns. The primary mindset shifts from optimizing purely for theoretical accuracy (e.g., AUC-ROC) to optimizing for **Return on Investment (ROI)** and business utility. Technical mastery is demonstrated through the clear communication of system trade-offs to non-technical stakeholders, such as explaining model hallucinations, latency bottlenecks, or data privacy guardrails without utilizing academic jargon. Preparation centers on structuring highly ambiguous client problems (e.g., supply chain disruptions, customer churn) into logical engineering phases: outlining data ingestion mechanics, establishing predictive baselines, and integrating final models into existing operational workflows.
+
+## STAR Technique
+
+Situation: Set the context
+
+Task: What was the goal
+
+Action: What was the actions you took
+
+Result: What was the result
